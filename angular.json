@@ -32,7 +32,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/Unity/3/Build/UnityLoader.js"
             ]
           },
           "configurations": {
@@ -99,7 +98,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/Unity/3/Build/UnityLoader.js"
             ]
           }
         },
