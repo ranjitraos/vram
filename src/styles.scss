@@ -1,1 +1,218 @@
 /* You can add global styles to this file, and also import other style files */
+#logo{
+    height:50px;
+    width:300px;
+}
+
+.slide-tag{
+    padding-left: 5%;
+}
+
+.single-welcome-slide{
+    height: 100vh;
+}
+
+.single_gallery_item{
+  visibility: visible!important;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+/*Title text css*/
+:root {
+	--white:#f1f1f1
+}
+
+.title-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+	font-size: 82px;
+	color: var(--white);
+	letter-spacing: 0.7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-text > span {
+	opacity: 0.15;
+}
+#R {
+	opacity: 1;
+	animation: flickerR 2s linear  reverse infinite;
+}
+#R::after {
+	content: '';
+	width: 150%;
+	-webkit-box-shadow: -35px 8px 60px 0px rgba(255,255,255,1);
+	-moz-box-shadow: -35px 8px 60px 0px rgba(255,255,255,1);
+	box-shadow: -35px 8px 60px 0px rgba(255,255,255,1);
+}
+#V, #A {
+	animation: flickerVA 2s linear reverse infinite;
+	position: relative;
+}
+#V::after, 
+#V::before  {
+	content:' ';
+	width: 100px;
+	height: 100px;
+	background: var(--white);
+	position: absolute;
+	top: -50%;
+	left: 100%;
+	border-radius: 100%;
+	opacity: 0.05;
+	filter: blur(10px);
+}
+#V::after {
+	width: 200px;
+	height: 200px;
+	top: -30%;
+	left: 40%;
+	opacity: 0.1;
+	filter: blur(10px);
+}
+#M {
+	animation: flickerM 2s linear reverse infinite
+}
+
+@keyframes flickerR {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerVA {
+	0% {
+		opacity: 0.19;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	15% {
+		opacity: 0.35;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.2;
+	}
+	60% {
+		opacity: 0.4;
+	}
+	70% {
+		opacity: 0.35;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flickerM {
+	0% {
+		opacity: 0.15;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.12;
+	}
+	15% {
+		opacity: 0.2;
+	}
+	25% {
+		opacity: 0.15;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.05;
+	}
+	40% {
+		opacity: 0.12;
+	}
+	45% {
+		opacity: 0.15;
+	}
+	60% {
+		opacity: 0.3;
+	}
+	70% {
+		opacity: 0.2;
+	}
+	80% {
+		opacity: 0.3;
+	}
+	90% {
+		opacity: 0.18;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
